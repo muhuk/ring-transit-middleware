@@ -1,0 +1,65 @@
+ring-transit-middleware
+=======================
+
+Ring middleware for Transit requests & responses.
+
+
+Latest Release
+--------------
+
+Leiningen
+~~~~~~~~~
+
+Add this to your `:dependencies` in `project.clj`:
+
+image:http://clojars.org/ring-transit-middleware/latest-version.svg["Clojars Project", link=http://clojars.org/ring-transit-middleware]
+
+
+
+Usage
+-----
+
+Defaults should work fine for most use cases:
+
+
+[source, Clojure]
+----
+(require '[ring.middleware.transit :refer [wrap-transit]])
+
+
+(defn handler [request]
+  (let [username (get-in request [:params :username])]
+    {:hello username}))
+
+
+(defn app
+  (-> handler
+      (wrap-transit)))
+----
+
+The handler above would accept transit requests and it would encode clojure
+data structures like maps and vectors into transit. See API documentation for
+more info.
+
+`wrap-transit` also accepts an options map, see API documentation for more info.
+
+
+Aleph
+~~~~~
+
+`wrap-transit` is compatible with link:http://aleph.io/[Aleph]'s deferred
+responses. It should just work out of the box.
+
+
+See Also
+--------
+
+* link:https://github.com/jalehman/ring-transit/[ring-transit]
+
+
+License
+-------
+
+Copyright (C) 2015 Atamert Ölçgen
+
+Distributed under The MIT License, same as Ring. See `LICENSE` file.
