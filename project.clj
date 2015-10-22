@@ -9,7 +9,10 @@
   :plugins [[codox "0.8.15"]
             [com.jakemccrary/lein-test-refresh "0.10.0"]
             [jonase/eastwood "0.2.1"]]
+  :profiles {:1.6 {:dependencies [[org.clojure/clojure "1.6.0"]]}
+             :1.8 {:dependencies [[org.clojure/clojure "1.8.0-beta1"]]}}
   :codox {:defaults {:doc/format :markdown}
           :src-dir-uri "http://github.com/muhuk/ring-transit-middleware/blob/master/"
           :src-linenum-anchor-prefix "L"
-          :output-dir "doc"})
+          :output-dir "doc"}
+  :aliases {"all" ["with-profile" "dev:dev,1.6:dev,1.8"]})
