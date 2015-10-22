@@ -2,7 +2,7 @@ ring-transit-middleware
 =======================
 
 image:https://travis-ci.org/muhuk/ring-transit-middleware.svg?branch=master["Build Status", link=https://travis-ci.org/muhuk/ring-transit-middleware]
-image:http://b.repl.ca/v1/doc-API-blue.png["API Documentation", link=http(s)://muhuk.github.io/ring-transit-middleware]
+image:http://b.repl.ca/v1/doc-API-blue.png["API Documentation", link=http://muhuk.github.io/ring-transit-middleware]
 
 
 Ring middleware for Transit requests & responses.
