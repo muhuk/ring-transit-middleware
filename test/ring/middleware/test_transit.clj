@@ -1,3 +1,8 @@
+;; Copyright © 2015 Atamert Ölçgen
+;;
+;; Distributed under the The MIT License
+;; http://opensource.org/licenses/MIT
+
 (ns ring.middleware.test-transit
   (:require [clojure.test :refer :all]
             [cognitect.transit :as t]
