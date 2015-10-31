@@ -3,7 +3,7 @@
   :url "https://github.com/muhuk/ring-transit-middleware"
   :license {:name "The MIT License"
             :url "http://opensource.org/licenses/MIT"}
-  :dependencies [[com.cognitect/transit-clj "0.8.281" :exclusions [commons-codec]]
+  :dependencies [[com.cognitect/transit-clj "0.8.285" :exclusions [commons-codec]]
                  [org.clojure/clojure "1.7.0"]
                  [ring/ring-core "1.4.0"]]
   :plugins [[codox "0.8.15"]
