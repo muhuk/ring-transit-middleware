@@ -48,7 +48,7 @@
 (def ^:private chain
   (if aleph-available?
     (find-var 'manifold.deferred/chain)
-    identity))
+    (fn [v f] (f v))))
 
 
 (declare -decode-request
