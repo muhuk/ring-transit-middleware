@@ -11,7 +11,7 @@ git init
 
 # assume Travis CI identity
 git config user.name "Travis CI"
-git config user.email "muhuk@muhu.com"
+git config user.email "muhuk@muhuk.com"
 
 
 # The first and only commit to this new Git repo contains all the
