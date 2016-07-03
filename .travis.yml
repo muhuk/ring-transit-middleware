@@ -3,7 +3,7 @@ lein: lein2
 script:
   - lein2 all test
   - lein2 eastwood
-  - lein2 doc
+  - lein2 codox
   - bin/deploy-docs.sh
 env:
   global:
