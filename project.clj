@@ -1,4 +1,4 @@
-(defproject ring-transit-middleware "0.1.3-SNAPSHOT"
+(defproject ring-transit-middleware "0.1.4-SNAPSHOT"
   :description "Ring middleware for Transit request & responses."
   :url "https://github.com/muhuk/ring-transit-middleware"
   :license {:name "The MIT License"
