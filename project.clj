@@ -8,7 +8,7 @@
                  [ring/ring-core "1.5.0"]]
   :plugins [[lein-codox "0.9.5"]
             [com.jakemccrary/lein-test-refresh "0.16.0"]
-            [jonase/eastwood "0.2.1"]]
+            [jonase/eastwood "0.2.3"]]
   :profiles {:1.6 {:dependencies [[org.clojure/clojure "1.6.0"]]}
              :1.7 {:dependencies [[org.clojure/clojure "1.7.0"]]}}
   :codox {:metadata {:doc/format :markdown}
